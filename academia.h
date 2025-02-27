@@ -95,7 +95,6 @@ class Academia {
 
         mhs.show();
         jadwal.show();
-
         cout << "Klik key mana saja untuk lanjut...";
         _getch();
         
@@ -112,8 +111,8 @@ class Academia {
         system("cls");
         int menu;
         vector<vector<matkul>> mataKuliah = {
-            {{"TIK204 - Algoritma & Struktur Data", "Sarjana Terapan - Teknik Informatika", "2B", "	Reguler", "DEWI YANTI LILIANA", "2024/2025 Genap", "Offline"}},
-            {{"	TIK208 - Sistem Informasi Manajemen", "Sarjana Terapan - Teknik Informatika", "2B", "	Reguler", "BAMBANG WARSUTA", "2024/2025 Genap", "Offline"}},
+            {{"TIK204 - Algoritma & Struktur Data", "Sarjana Terapan - Teknik Informatika", "2B", "Reguler", "DEWI YANTI LILIANA", "2024/2025 Genap", "Offline"}},
+            {{"TIK208 - Sistem Informasi Manajemen", "Sarjana Terapan - Teknik Informatika", "2B", "Reguler", "BAMBANG WARSUTA", "2024/2025 Genap", "Offline"}},
         };
 
         cout << "Menu : " << endl;
@@ -131,27 +130,26 @@ class Academia {
         case 1: 
             cout << "Fitur Isian kuisioner EDOM" << endl;
             break;
-        
         case 2: 
-            cout << setfill('-') << setw(140) << "-" << setfill(' ') << endl;
-            cout << "| " << left << setw(28) << "Mata Kuliah" << " | "
-                << setw(11) << "Prodi" << " | "
-                << setw(12) << "Kelas" << " | "
-                << setw(8) << "Konsentrasi" << " | "
-                << setw(18) << "Pengajar" << " | "
-                << setw(15) << "Tahun Akademik" << " | "
-                << setw(12) << "Jenis Pertemuan" << " |" << endl;
-            cout << setfill('-') << setw(140) << "-" << setfill(' ') << endl;
+            cout << setfill('-') << setw(170) << "-" << setfill(' ') << endl;
+            cout << "| " << left << setw(40) << "Mata Kuliah" << " | "
+                << setw(36) << "Prodi" << " | "
+                << setw(5) << "Kelas" << " | "
+                << setw(12) << "Konsentrasi" << " | "
+                << setw(20) << "Pengajar" << " | "
+                << setw(16) << "Tahun Akademik" << " | "
+                << setw(15) << "Jenis Pertemuan" << " |" << endl;
+            cout << setfill('-') << setw(170) << "-" << setfill(' ') << endl;
             for(int i = 0; i < mataKuliah.size(); i++) {
                 for(int j = 0; j < mataKuliah[i].size(); j++) {
-                    cout << "| " << left << setw(28) << mataKuliah[i][j].matakuliah << " | "
-                        << setw(11) << mataKuliah[i][j].prodi << " | "
-                        << setw(12) << mataKuliah[i][j].kelas << " | "
-                        << setw(8) << mataKuliah[i][j].konsen << " | "
-                        << setw(18) << mataKuliah[i][j].pengajar << " | "
-                        << setw(15) << mataKuliah[i][j].tahunAkademik << " | "
-                        << setw(12) << mataKuliah[i][j].jenisPertemuan << " |" << endl;
-                    cout << setfill('-') << setw(140) << "-" << setfill(' ') << endl;
+                    cout << "| " << left << setw(40) << mataKuliah[i][j].matakuliah << " | "
+                        << setw(36) << mataKuliah[i][j].prodi << " | "
+                        << setw(5) << mataKuliah[i][j].kelas << " | "
+                        << setw(12) << mataKuliah[i][j].konsen << " | "
+                        << setw(20) << mataKuliah[i][j].pengajar << " | "
+                        << setw(16) << mataKuliah[i][j].tahunAkademik << " | "
+                        << setw(15) << mataKuliah[i][j].jenisPertemuan << " |" << endl;
+                    cout << setfill('-') << setw(170) << "-" << setfill(' ') << endl;
                 }
                 cout << endl;
             }

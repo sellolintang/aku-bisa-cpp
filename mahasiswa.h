@@ -4,7 +4,7 @@ using namespace std;
 class Mahasiswa {
   private:
     string nim = "1";
-    string nama = "Nugay Nugi Gay";
+    string nama = "ray kinaya";
     string alamat = "Depok anti kendor";
     string no_telp = "0812696969";
     string prodi = "Sarjana Terapan - Teknik Informatika";

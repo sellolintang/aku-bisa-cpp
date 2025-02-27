@@ -18,14 +18,16 @@ class Jadwal{
 
 void Jadwal::absen(){
     string absen;
-    cout << "Absen Presensi (Y/N)? ";
-    cin >> absen;
-    if(absen == "Y" || absen == "y"){
-        presensi = true;
-        cout << "Presensi berhasil!" << endl;
-    }else{
-        presensi = false;
-        cout << "Presensi gagal!" << endl;
+    if(!presensi){
+        cout << "Absen Presensi (Y/N)? ";
+        cin >> absen;
+        if(absen == "Y" || absen == "y"){
+            presensi = true;
+            cout << "Presensi berhasil!" << endl;
+        }else{
+            presensi = false;
+            cout << "Presensi gagal!" << endl;
+        }
     }
 }
 
