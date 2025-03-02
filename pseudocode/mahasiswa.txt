@@ -15,6 +15,7 @@ Post   fungsi login dipanggil
         6  kelas_mahasiswa ← "Reguler B (B)"  
         7  status_mahasiswa ← "Aktif"  
         8  password ← "1"  
+        
     public:
         1. Function login() → return boolean  
                 1  set input_username  
