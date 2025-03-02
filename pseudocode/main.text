@@ -1,0 +1,8 @@
+Algorithm Main  
+Pre    nothing  
+Post   objek Academia dibuat dan program dijalankan  
+
+1  Program utama  
+    1  Buat objek academia dari class Academia  
+    2  Jalankan constructor Academia()  
+end Main  
