@@ -15,37 +15,35 @@ Post   fungsi login dipanggil
         6  kelas_mahasiswa ← "Reguler B (B)"  
         7  status_mahasiswa ← "Aktif"  
         8  password ← "1"  
-
     public:
-2   Function login() → return boolean  
-        1  set input_username  
-        2  set input_password  
-        3  set login ← false  
-        4  loop (login = false)  
-            1  clear screen  
-            2  print " --- LOGIN ACADEMIA --- "  
-            3  print " Username : "  
-            4  input input_username  
-            5  print " Password : "  
-            6  input input_password  
-            7  if input_username = nim AND input_password = password then  
-                1  set login ← true  
-            8  else  
-                1  set login ← false  
-            9  end if  
-        5  end loop  
-        6  return login  
-
-3   Procedure show()  
-        1  print newline  
-        2  print " Informasi Mahasiswa "  
-        3  print garis pemisah  
-        4  print " NIM               : " + nim  
-        5  print " Nama              : " + nama  
-        6  print " Alamat            : " + alamat  
-        7  print " No.Telp/HP        : " + no_telp  
-        8  print " Program Studi     : " + prodi  
-        9  print " Kelas Mahasiswa   : " + kelas_mahasiswa  
-        10 print " Status Mahasiswa  : " + status_mahasiswa  
-        11 print garis pemisah  
+        1. Function login() → return boolean  
+                1  set input_username  
+                2  set input_password  
+                3  set login ← false  
+                4  loop (login = false)  
+                    1  clear screen  
+                    2  print " --- LOGIN ACADEMIA --- "  
+                    3  print " Username : "  
+                    4  input input_username  
+                    5  print " Password : "  
+                    6  input input_password  
+                    7  if input_username = nim AND input_password = password then  
+                        1  set login ← true  
+                    8  else  
+                        1  set login ← false  
+                    9  end if  
+                5  end loop  
+                6  return login  
+        2. Procedure show()  
+                1  print newline  
+                2  print " Informasi Mahasiswa "  
+                3  print garis pemisah  
+                4  print " NIM               : " + nim  
+                5  print " Nama              : " + nama  
+                6  print " Alamat            : " + alamat  
+                7  print " No.Telp/HP        : " + no_telp  
+                8  print " Program Studi     : " + prodi  
+                9  print " Kelas Mahasiswa   : " + kelas_mahasiswa  
+                10 print " Status Mahasiswa  : " + status_mahasiswa  
+                11 print garis pemisah  
 end Mahasiswa  

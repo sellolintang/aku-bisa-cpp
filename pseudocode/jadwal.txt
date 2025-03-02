@@ -13,24 +13,25 @@ Post   memunculkan informasi jadwal, menu absensi mahasiswa
         7  presensi ← false  
 
     public:
-2   Procedure absen()  
-        1  if presensi = false then  
-        2      print "Absen Presensi (Y/N)? "  
-        3      input absen  
-        4      if absen = "Y" or absen = "y" then  
-        5          set presensi ← true  
-        6          print "Presensi berhasil!"  
-        7      else  
-        8          print "Presensi gagal!"  
-        9      end if  
-        10  end if  
-        
-3   Procedure show()  
-        1  print garis pemisah  
-        2  print header tabel  
-        3  print garis pemisah  
-        4  print informasi jadwal kuliah  
-        5  print garis pemisah  
-        6  if presensi = false then  
-        7      call absen()  
-        8  end if  
+        1. Procedure absen()  
+            1  if presensi = false then  
+            2      print "Absen Presensi (Y/N)? "  
+            3      input absen  
+            4      if absen = "Y" or absen = "y" then  
+            5          set presensi ← true  
+            6          print "Presensi berhasil!"  
+            7      else  
+            8          print "Presensi gagal!"  
+            9      end if  
+            10  end if  
+
+        2. Procedure show()  
+            1  print garis pemisah  
+            2  print header tabel  
+            3  print garis pemisah  
+            4  print informasi jadwal kuliah  
+            5  print garis pemisah  
+            6  if presensi = false then  
+            7      call absen()  
+            8  end if  
+end jadwal
